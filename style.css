@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5),
+              rgba(0,0,0,0.3), rgba(0,0,0,0.2) )
+              , url(food-background.jpg)no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Girassol', cursive;
+}
+
+.header {
+    display: flex;
+    margin: none;
+}
+
+#title {
+    color: white;
+}
+
+.nav-pages {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-pages li {
+    margin: 5px;
+}
+
+.nav-pages li a {
+    text-decoration: none;
+    color: white;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.nav-pages li a:hover {
+    padding: 0 10px;
+    border-bottom: 3px solid rgba(2, 158, 2, 0.3);
+    font-size: 1.3rem;
+}
+
+.selected {
+    padding: 0 3px;
+    border-bottom: 3px solid rgba(2, 158, 2, 0.7);
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.welcome h2 {
+    font-size: 4rem;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.menu li, .menu h2{
+    color: white;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.menu-item span {
+    padding: 0 20px;
+}
