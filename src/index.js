@@ -34,7 +34,14 @@ const switchTab = (tab) => {
             break;
     }
     currentPage = tab;
+    removeFadeClass();
 }
+
+const removeFadeClass = () => {
+    setTimeout( () => {
+        document.querySelector('.fade').classList.remove('fade');
+    }, 1);
+};
 
 homeButton.classList.add('selected');
 homeButton.addEventListener('click', () => {
@@ -48,3 +55,5 @@ menuButton.addEventListener('click', () => {
 contactButton.addEventListener('click', () => {
     switchTab('contact');
 });
+
+document.addEventListener('DOMContentLoaded', removeFadeClass);

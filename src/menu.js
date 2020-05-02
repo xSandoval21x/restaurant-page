@@ -49,7 +49,7 @@ const menuPage = (content) => {
 
     menuList.setAttribute('type', 'none');
     menuList.setAttribute('class', 'menu');
-    menuContainer.setAttribute('class', 'menu-container');
+    menuContainer.setAttribute('class', 'menu-container fade');
     menuContainer.appendChild(menuList);
     content.appendChild(menuContainer);
 }
